@@ -1,4 +1,8 @@
-from chainedpy.chain import Chain  # re-export runtime class
+
+# Dual import strategy for Pylance and runtime compatibility, otherwise linting issues
+
+from chainedpy.chain import Chain
+
 from importlib import import_module
 import pkgutil, pathlib
 
